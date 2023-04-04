@@ -2,17 +2,17 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+# Tạo document tutorial mới
 
-Documents are **groups of pages** connected through:
+Các trang document tutorial là **nhóm các trang** được kết nối qua:
 
-- a **sidebar**
+- **sidebar**
 - **previous/next navigation**
 - **versioning**
 
-## Create your first Doc
+## Tạo document tutorial đầu tiên
 
-Create a Markdown file at `docs/hello.md`:
+Tạo Markdown file ở `docs/hello.md`:
 
 ```md title="docs/hello.md"
 # Hello
@@ -20,13 +20,13 @@ Create a Markdown file at `docs/hello.md`:
 This is my **first Docusaurus document**!
 ```
 
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
+Và kiểm tra kết quả bài document tutorial vừa tạo ở [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
 
 ## Configure the Sidebar
 
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
+**Sidebar** được tạo tự động từ folder `docs`.
 
-Add metadata to customize the sidebar label and position:
+Thêm metadata để customize sidebar label và position:
 
 ```md title="docs/hello.md" {1-4}
 ---
@@ -39,7 +39,7 @@ sidebar_position: 3
 This is my **first Docusaurus document**!
 ```
 
-It is also possible to create your sidebar explicitly in `sidebars.js`:
+Cũng có thể tạo sidebar thủ công trong `sidebars.js`:
 
 ```js title="sidebars.js"
 module.exports = {

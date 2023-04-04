@@ -4,21 +4,19 @@ sidebar_position: 4
 
 # Markdown Features
 
-Docusaurus supports **[Markdown](https://daringfireball.net/projects/markdown/syntax)** and a few **additional features**.
+1 vài tính năng của **[Markdown](https://daringfireball.net/projects/markdown/syntax)** .
 
 ## Front Matter
 
-Markdown documents have metadata at the top called [Front Matter](https://jekyllrb.com/docs/front-matter/):
+Markdown documents có metadata ở trên cùng được gọi là [Front Matter](https://jekyllrb.com/docs/front-matter/):
 
 ```text title="my-doc.md"
-// highlight-start
 ---
 id: my-doc-id
 title: My document title
 description: My document description
 slug: /my-custom-url
 ---
-// highlight-end
 
 ## Markdown heading
 
@@ -27,39 +25,33 @@ Markdown text with [links](./hello.md)
 
 ## Links
 
-Regular Markdown links are supported, using url paths or relative file paths.
+Regular Markdown links được support, có thể dùng url hoặc file paths.
 
 ```md
-Let's see how to [Create a page](/create-a-page).
+Cùng xem [Tạo page mới](/create-a-page).
 ```
 
 ```md
-Let's see how to [Create a page](./create-a-page.md).
+Cùng xem [Tạo page mới](./create-a-page.md).
 ```
 
-**Result:** Let's see how to [Create a page](./create-a-page.md).
+**Kết quả:** Cùng xem [Tạo page mới](./create-a-page.md).
 
 ## Images
 
-Regular Markdown images are supported.
+Regular Markdown images được support.
 
-You can use absolute paths to reference images in the static directory (`static/img/docusaurus.png`):
-
-```md
-![Docusaurus logo](/img/docusaurus.png)
-```
-
-![Docusaurus logo](/img/docusaurus.png)
-
-You can reference images relative to the current file as well. This is particularly useful to colocate images close to the Markdown files using them:
+có thể dùng đường dẫn thư mục (`static/img/blog-logo.svg`):
 
 ```md
-![Docusaurus logo](./img/docusaurus.png)
+![Logo](/img/blog-logo.svg)
 ```
+
+![Logo](/img/blog-logo.svg)
 
 ## Code Blocks
 
-Markdown code blocks are supported with Syntax highlighting.
+Markdown code blocks support Syntax highlighting.
 
     ```jsx title="src/components/HelloDocusaurus.js"
     function HelloDocusaurus() {
@@ -129,18 +121,19 @@ This is <Highlight color="#25c2a0">Docusaurus green</Highlight> !
 This is <Highlight color="#1877F2">Facebook blue</Highlight> !
 ```
 
-export const Highlight = ({children, color}) => (
+export const Highlight = ({ children, color }) => (
   <span
     style={{
       backgroundColor: color,
-      borderRadius: '20px',
-      color: '#fff',
-      padding: '10px',
-      cursor: 'pointer',
+      borderRadius: "20px",
+      color: "#fff",
+      padding: "10px",
+      cursor: "pointer",
     }}
     onClick={() => {
       alert(`You clicked the color ${color} with label ${children}`);
-    }}>
+    }}
+  >
     {children}
   </span>
 );
