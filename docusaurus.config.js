@@ -71,6 +71,10 @@ const config = {
         },
         items: [
           {
+            type: 'search',
+            position: 'right',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
@@ -86,6 +90,15 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true
       },
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'HYR51WHO5D',
+    
+        // Public API key: it is safe to commit it
+        apiKey: '20df5a26fbdd33ddc4a09a8e52102165',
+    
+        indexName: 'yametony',
+      }
     }),
 };
 

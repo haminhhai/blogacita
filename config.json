@@ -1,0 +1,15 @@
+{
+    "index_name": "yametony",
+    "start_urls": ["https://blogacita.netlify.com/docs/huong-dan-co-ban/create-a-blog-post"],
+    "selectors": {
+      "default": {
+        "lvl0": "main article h1",
+        "lvl1": "main article h2",
+        "lvl2": "main article h3",
+        "lvl3": "main article h4",
+        "lvl4": "main article h5",
+        "lvl5": "main article h6",
+        "text": "main article p,main article ul,main article ol, main article div, main article pre"
+      }
+    }
+  }
